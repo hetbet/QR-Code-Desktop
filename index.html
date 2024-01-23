@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<!-- Head -->
+<head>
+
+  <!-- Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- Title -->
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+    /* Imported font */
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    /* Html + Body */
+    body {
+      margin: 0;
+
+      background-color: hsl(212, 45%, 89%); 
+
+      display: grid;
+      justify-content: center;
+      
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 20vh 60vh 20vh;
+
+      font-size: 2vh;
+    }
+
+    /* Span */
+    span {
+      font-family: 'Outfit', sans-serif;
+
+      margin: 1vh 0 1vh 0;
+    }
+
+    /* Predefined attribution stuff :D */
+    .attribution { font-size: 11px; text-align: center; font-family:'Gill Sans';}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    /* Align bottom text */
+    #bottom {
+      grid-column: 1/4;
+      grid-row: 3/4;
+
+      display: flex;
+      align-items:end;
+      padding-bottom: 20px;
+      justify-content: center;
+    }
+
+    /* A SPACING */
+    a {
+      margin-left: 2px;
+      text-decoration: wavy underline blue;
+    }
+
+    /* Card */
+    #cardSection {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+
+      max-width: 400px;
+
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+
+      grid-column: 2/3;
+      grid-row: 2/3;
+      
+      grid-template-rows: 50% 50%;
+    }
+
+    #cardSection > * {
+      margin: 0 5% 0 5%;
+    }
+
+    /* Image Section */
+    #imgSection {
+      display: flex;
+      justify-content: center;
+      
+      grid-row: 1/2;
+      
+      padding: 2vh 2vw;
+      
+      height: auto;
+      width: auto;
+    }
+
+    #imgSection > img {
+      height: 40vh;
+      width: auto;
+
+      border-radius: 10px;
+
+      max-height: 100%;
+    }
+
+    /* Text Section */
+    #txtSection {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      text-align: center;
+
+      grid-row: 2/3;
+    }
+
+  </style>
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Card Section -->
+  <div id="cardSection">
+
+    <!-- Image -->
+    <div id="imgSection">
+      <img src="/images/image-qr-code.png">
+    </div>
+
+    <!-- Text -->
+    <div id="txtSection">
+      <span style="font-weight: 700; font-size: 2.5vh;">Improve your front-end skills by building projects</span> 
+      <span style="color: hsl(220, 15%, 55%);">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</span>
+    </div>
+
+  </div>
+  
+  <!-- Attribution Section -->
+  <div class="attribution" id="bottom">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/hetbet"> Matthew Roberts</a>.
+  </div>
+  
+</body>
+</html>
